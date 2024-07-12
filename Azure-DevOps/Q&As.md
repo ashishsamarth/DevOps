@@ -104,8 +104,38 @@ Explanation: Straight from the Git documentation, a pull request "incorporates c
 current branch."
 
 --------------------------------------------------------------------------------------------------------------------------
+Q-009: When a team adopts a Continuous Delivery mindset by using DevOps, what objectives will this help them accomplish?
+--------------------------------------------------------------------------------------------------------------------------
+a. A narrow focus on cycle time reduction - new features are released every two weeks, if not more frequently
+b. Comples releases with fully tested and stable features, but also a fewer number of releases
+c. That the team will be largely self0managed and responsive to changing requirements from customers and product owners
+d. A way to understand a team's resource-based velocity - that is, how many stable features can be added to the value 
+    stream given a certain number of team members.
 
+Answer: c. That the team will be largely self0managed and responsive to changing requirements from customers and product 
+owners
 
+--------------------------------------------------------------------------------------------------------------------------
+Q-010: You are new to a team developing an app written using .Net Core. This app connects to a SQL database. Currently, the
+     app is developed using on-prem servers. For prod, the app will be moved and hosted on an Azure Web App. Where should 
+     you store the SQL database connection settings?
+--------------------------------------------------------------------------------------------------------------------------
+a. By Configuring a connection string in Azure App Service
+b. In a web config file
+c. In the identity section in the App service
+d. In Authentication / Authorization in App service
 
+Answer: a. By Configuring a connection string in Azure App Service
 
+--------------------------------------------------------------------------------------------------------------------------
+Q-011: Your team is using an Azure Pipeline for CI/CD. The pipeline contains a secret (authentication credentials) that 
+needs to be shared in the pipeline. How would you define the secret?
+--------------------------------------------------------------------------------------------------------------------------
+a. In the YAML File of the repo, add the "Secret" variable
+b. In the YAML file of the repo, add a normal variable - all YAML files are encrypted in Azure Repos
+c. Set the secret using the Azure DevOps pipeline editor
+d. Set the secret with in the app itself - Azure will encrypt and store the secret using kerberos.
 
+Answer: c. Set the secret using the Azure DevOps pipeline editor
+
+--------------------------------------------------------------------------------------------------------------------------
