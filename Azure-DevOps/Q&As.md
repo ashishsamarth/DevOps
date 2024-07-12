@@ -40,3 +40,30 @@ short amount of time - usually 2 or 3 weeks. Sprints facilitate concrete work pr
 quickly to change.
 
 --------------------------------------------------------------------------------------------------------------------------
+Q-004: Which of the following is not a work process teams can use to define work items in an Azure Board?
+--------------------------------------------------------------------------------------------------------------------------
+a. Scrum
+b. CMMI
+c. Lean / XP
+d. Basic
+e. Agile
+
+Answer: c. Lean / XP
+
+--------------------------------------------------------------------------------------------------------------------------
+Q-005: As a product owner in an Agile development team, want to quickly add items to your team's portfolio backlog and 
+also begin planning the next sprint. Which is likely going to be the best Azure Boards node for your objectives.
+--------------------------------------------------------------------------------------------------------------------------
+a. Backlogs
+b. Queries
+c. Sprints
+
+Answer: a. Backlogs
+
+Explanation: DevOps backlogs let you quickly add and prioritize your product and portfolio backlogs, which list work items 
+either as a flat or hierarchical list. Backlogs also let you easily assign work from your backlog to a sprint.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
