@@ -64,6 +64,16 @@ Explanation: DevOps backlogs let you quickly add and prioritize your product and
 either as a flat or hierarchical list. Backlogs also let you easily assign work from your backlog to a sprint.
 
 --------------------------------------------------------------------------------------------------------------------------
+Q-006: You are part of a development team that has an existing project stored in GitHub. You want to change migrate this 
+code to use Azure DevOps Repo. Which of the following will help you quickly clone the Repo to Azure DevOps?
+--------------------------------------------------------------------------------------------------------------------------
+a. Implement a new pull request from an empty Azure Repo, then delete the existing Readme file
+b. Perform a push request of the GitHub repo.
+c. Configure a service hook in GitHub to sync the Github repo with DevOps.
+d. Import a Git repo using Azure DevOps repos.
 
+Answer: d. Import a Git repo using Azure DevOps repos.
+Explanation: Import from the Azure Git Repo - migration from GitHub is very straightforward using the Import Git repo 
+procedure.
 
-
+--------------------------------------------------------------------------------------------------------------------------
