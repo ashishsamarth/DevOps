@@ -77,3 +77,35 @@ Explanation: Import from the Azure Git Repo - migration from GitHub is very stra
 procedure.
 
 --------------------------------------------------------------------------------------------------------------------------
+Q-007: Which file can you configure to ensure that certain file types are not committed to the local Git repository?
+--------------------------------------------------------------------------------------------------------------------------
+a. .gitignore
+b. ignore.git
+c. git.ignore
+d. gitignore.md
+
+Answer: a. .gitignore
+
+Explanation: Entries in the .gitignore file tell GIt not to include these files and file types when performing a pull 
+request that would sync a local repo branch with a remote branch
+
+--------------------------------------------------------------------------------------------------------------------------
+Q-008: You have a local repository, but the team members have pushed some changes into the remote repository. Which Git 
+operation would you use to download those changes into your working copy?
+--------------------------------------------------------------------------------------------------------------------------
+a. checkout
+b. commit
+c. export
+d. pull
+
+Answer: d. pull
+
+Explanation: Straight from the Git documentation, a pull request "incorporates changes from a remote repository into the 
+current branch."
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
