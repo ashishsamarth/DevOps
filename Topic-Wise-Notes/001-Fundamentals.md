@@ -50,9 +50,21 @@ Dev-OPS Practices:
 
 2. **Developers on-Call**: Sometimes it works, some it does not, since the person responding to the call, may not have actually developed the code or completely familiar with it.
 
-3. **Transparent Uptime**: Whether you are running a public / private functionalities, communication is the key to maintain trust with next actions clearly called out in terms of service restoration
+3. **Transparent Uptime**: Whether you are running a public / private functionalities, communication is the key to maintain trust with next actions clearly called out in terms of service restoration. Following can be utilized in the communication
 
-4. **Blameless Postmortems**: Their is no single root cause for a failure, and human error can happen. But to maintain a good culture, the teams should align with blameless postmortems.
+    - Admit failure, like you own it, since customer is aware of the failure
+    - Sound like a human rather than press conference speaker
+    - Have a communication channel with regular updates
+    - Be Authentic. Have a different individual run the meeting.
+
+4. **Blameless Postmortems**: Their is no single root cause for a failure, and human error can happen. But to maintain a good culture, the teams should align with blameless postmortems. Following can be utilized in the postmortem process
+
+    - A description of the incident
+    - A description of the rootcause
+    - How the incident was stabilized or fixed
+    - A timeline of events, including all actions taken
+    - How the incident affected customers
+    - Remediations and corrective actions
 
 5. **Embedded Teams**: Often the idea for a developer is to ship the code, and for operation is to deploy the code. Usually their is a gap in alignment in terms of 'When' to deploy the code and obviously 'its not my part' of the equation mindset. So if we have one operations engineer in every development team, it solves the problem, because that way you make the entire team responsible for the 'SUCCESS' and not either development or operations.
 
@@ -69,3 +81,7 @@ If there are any issues identified, you can shift back to the un-touched system 
 10. **Chaos Monkey**: The idea behind this is to ensure developers dont rely on the infra-components to be always available and develop resiliency in the code itself.
 Chaos Monkey, is a piece of software designed by Netflix, which would randomly go and trash their servers on the AWS cloud, so that the developers understand that not all components in their systems are always up and running and they build reliability into the software rather than relying on the components.
 
+--------------------------------------------------------------------------------------------------------------------------
+Dev-OPS Configuration Management:
+--------------------------------------------------------------------------------------------------------------------------
+Configuration Management: Is the management of change control for system configuration after initial provisioning; maintaining and upgrading the application and its dependencies. Few examples are Declarative models like - AWS Cloud Formation; Azure Resource Manager; Terraform etc.
