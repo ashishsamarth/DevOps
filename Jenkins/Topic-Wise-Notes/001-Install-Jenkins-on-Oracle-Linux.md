@@ -26,7 +26,7 @@ Java-11 is out of support, so preference is Java-17 or Java-21
         It will provide you multiple locations, out of that list go for
         ls -lrt /usr/bin/java : This should point you to /etc/alternatives/java , which is a symbolic link for the actual location of java
 
-        ![Github Images](/Jenkins/Assets/Jenkins-whereis-java.JPG)
+    ![Github Images](/Jenkins/Assets/Jenkins-whereis-java.JPG)
         
     c. create a new file java.sh and export the following variables to it
         export JAVA_HOME=<*Path to the actual location of java*>
@@ -41,6 +41,6 @@ Java-11 is out of support, so preference is Java-17 or Java-21
         cd /etc/alternatives
         ln -sfn <*Path to the actual location of java directory/bin/java*> java
 
-        ![Github Images](/Jenkins/Assets/Jenkins-Symbolic-Link-Java.JPG)
-        
+    ![Github Images](/Jenkins/Assets/Jenkins-Symbolic-Link-Java.JPG)
+
 5. 
