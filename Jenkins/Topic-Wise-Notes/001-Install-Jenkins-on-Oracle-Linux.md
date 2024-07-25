@@ -3,20 +3,22 @@
 
 --------------------------------------------------------------------------------------------------------------------------
 1. Install Java: Java-11 is out of support, so preference is Java-17 or Java-21
-    
+--------------------------------------------------------------------------------------------------------------------------    
     dnf install java-17-openjdf -y
 
 2. Validate the Java-version by eecuting the following command on the terminal
-    
+--------------------------------------------------------------------------------------------------------------------------    
     java --version
 
-    ![Github Images](/Jenkins/Assets/Jenkins-Install-Java-17.JPG)
+--------------------------------------------------------------------------------------------------------------------------
+   ![Github Images](/Jenkins/Assets/Jenkins-Install-Java-17.JPG)
 
 3. If for some reason, java --version is not showing up the correct java version, check if you have multiple versions installed and then select the required version
-    
+--------------------------------------------------------------------------------------------------------------------------    
     update-alternatives --config java
 
-    ![Github Images](/Jenkins/Assets/jenkins-select-java-version.JPG)
+--------------------------------------------------------------------------------------------------------------------------
+![Github Images](/Jenkins/Assets/jenkins-select-java-version.JPG)
 
 4. If for some reason, the above approach still does not work, perform the following
 
@@ -47,27 +49,34 @@
 
 5. Add Jenkins Repository
 --------------------------------------------------------------------------------------------------------------------------
-        wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-    Download and import the Jenkins GPG key with the following command
 --------------------------------------------------------------------------------------------------------------------------
-        rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    Download and import the Jenkins GPG key with the following command
 
+--------------------------------------------------------------------------------------------------------------------------
+    rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+--------------------------------------------------------------------------------------------------------------------------
     Verify the repo-list
 --------------------------------------------------------------------------------------------------------------------------
-        dnf repolist
+    dnf repolist
 
 6. Install Jenkins
 --------------------------------------------------------------------------------------------------------------------------
-        dnf install jenkins --nobest
+    dnf install jenkins --nobest
 
+--------------------------------------------------------------------------------------------------------------------------
     Once jenkins is installed, start and enable jenkins to start at system reboot.
 
+--------------------------------------------------------------------------------------------------------------------------
     ![Github Images](/Jenkins/Assets/Jenkins-systemctl-start.JPG)
 
     ![Github Images](/Jenkins/Assets/Jenkins-Systemctl-Enable.JPG)
 
-    By default Jenkins runs on port 8080, which can be verified by 
 --------------------------------------------------------------------------------------------------------------------------
-        ss -antpl | grep 8080
+    By default Jenkins runs on port 8080, which can be verified by
+
+--------------------------------------------------------------------------------------------------------------------------
+    ss -antpl | grep 8080
 
