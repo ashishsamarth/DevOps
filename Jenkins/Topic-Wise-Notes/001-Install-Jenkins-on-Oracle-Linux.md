@@ -46,20 +46,20 @@
     ![Github Images](/Jenkins/Assets/Jenkins-Symbolic-Link-Java.JPG)
 
 5. Add Jenkins Repository
-
-    wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+--------------------------------------------------------------------------------------------------------------------------
+        wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
     Download and import the Jenkins GPG key with the following command
-
-    rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+--------------------------------------------------------------------------------------------------------------------------
+        rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
     Verify the repo-list
-
-    dnf repolist
+--------------------------------------------------------------------------------------------------------------------------
+        dnf repolist
 
 6. Install Jenkins
-
-    dnf install jenkins --nobest
+--------------------------------------------------------------------------------------------------------------------------
+        dnf install jenkins --nobest
 
     Once jenkins is installed, start and enable jenkins to start at system reboot.
 
@@ -68,7 +68,6 @@
     ![Github Images](/Jenkins/Assets/Jenkins-Systemctl-Enable.JPG)
 
     By default Jenkins runs on port 8080, which can be verified by 
+--------------------------------------------------------------------------------------------------------------------------
+        ss -antpl | grep 8080
 
-    ss -antpl | grep 8080
-
-    
