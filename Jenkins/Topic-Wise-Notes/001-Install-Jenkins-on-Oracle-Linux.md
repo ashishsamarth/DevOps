@@ -17,8 +17,7 @@
 --------------------------------------------------------------------------------------------------------------------------    
     update-alternatives --config java
 
---------------------------------------------------------------------------------------------------------------------------
-![Github Images](/Jenkins/Assets/jenkins-select-java-version.JPG)
+   ![Github Images](/Jenkins/Assets/jenkins-select-java-version.JPG)
 
 4. If for some reason, the above approach still does not work, perform the following
 
