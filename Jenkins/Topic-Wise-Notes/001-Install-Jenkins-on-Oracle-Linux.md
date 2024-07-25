@@ -2,8 +2,7 @@
 --------------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------------------------
-1. Install Java
-Java-11 is out of support, so preference is Java-17 or Java-21
+1. Install Java: Java-11 is out of support, so preference is Java-17 or Java-21
 
     dnf install java-17-openjdf -y
 
