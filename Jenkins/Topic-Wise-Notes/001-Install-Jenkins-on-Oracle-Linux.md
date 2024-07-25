@@ -51,9 +51,11 @@
     wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 Download and import the Jenkins GPG key with the following command
+--------------------------------------------------------------------------------------------------------------------------
     rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 Verify the repo-list
+--------------------------------------------------------------------------------------------------------------------------
     dnf repolist
 
 6. Install Jenkins
