@@ -4,18 +4,18 @@
 --------------------------------------------------------------------------------------------------------------------------
 1. Install Java: Java-11 is out of support, so preference is Java-17 or Java-21
 --------------------------------------------------------------------------------------------------------------------------    
-dnf install java-17-openjdf -y
+    dnf install java-17-openjdf -y
 
 2. Validate the Java-version by eecuting the following command on the terminal
 --------------------------------------------------------------------------------------------------------------------------    
-java --version
+    java --version
 
 --------------------------------------------------------------------------------------------------------------------------
    ![Github Images](/Jenkins/Assets/Jenkins-Install-Java-17.JPG)
 
 3. If for some reason, java --version is not showing up the correct java version, check if you have multiple versions installed and then select the required version
 --------------------------------------------------------------------------------------------------------------------------    
-update-alternatives --config java
+    update-alternatives --config java
 
 --------------------------------------------------------------------------------------------------------------------------
 ![Github Images](/Jenkins/Assets/jenkins-select-java-version.JPG)
