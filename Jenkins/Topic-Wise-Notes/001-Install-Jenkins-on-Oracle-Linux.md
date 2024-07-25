@@ -8,7 +8,7 @@
 
 2. Validate the Java-version by eecuting the following command on the terminal
 --------------------------------------------------------------------------------------------------------------------------    
-    java --version
+java --version
 
 --------------------------------------------------------------------------------------------------------------------------
    ![Github Images](/Jenkins/Assets/Jenkins-Install-Java-17.JPG)
